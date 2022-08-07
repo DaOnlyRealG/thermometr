@@ -1,0 +1,127 @@
+html, body {
+    margin: 0%;
+    padding: 0%;
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+
+/* --- CIRCLES --- */
+
+.circle-extern {
+    width: 20rem;
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    
+}
+.circle-middle {
+    width: 16rem;
+    aspect-ratio: 1 / 1;
+    background-color: black;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: 2;
+    border-radius: 50%;
+}
+.circle-intern {
+    width: 12rem;
+    aspect-ratio: 1 / 1;
+    background-color: aqua;
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    z-index: 4;
+    border-radius: 50%;
+}
+
+
+
+/* --- TOPS --- */
+.top-extern {
+    width: 15rem;
+    height: 37rem;
+    background-color: white;
+    border-top-left-radius: 7.5rem;
+    border-top-right-radius: 7.5rem;
+    position: fixed;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.top-middle {
+    width: 11rem;
+    height: 36rem;
+    background-color: black;
+    border-top-left-radius: 7.5rem;
+    border-top-right-radius: 7.5rem;
+    position: relative;
+    top: 2rem;
+    left: 2rem;
+    z-index: 2;
+}
+.top-intern {
+    width: 7rem;
+    height: 36rem;
+    background: rgb(0,255,255);
+    border-top-left-radius: 3.5rem;
+    border-top-right-radius: 3.5rem;
+    position: fixed;
+    bottom: -3rem;
+    left: 4rem;
+    z-index: 2;
+}
+
+
+/* --- TEXT --- */
+
+#temp {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translateX(-50%) translateY(-30%);
+    z-index: 8;
+}
+
+#errorMessage {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    z-index: 10;
+}
+
+
+/* --- COLORS --- */
+.cold {
+    background-color: aqua;
+}
+
+.hot {
+    background-color: rgb(255, 102, 0);
+}
+.normal {
+    background-color: rgb(57, 177, 5);
+}
