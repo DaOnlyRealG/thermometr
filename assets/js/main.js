@@ -27,6 +27,7 @@ const succesCallback = (position) => {
   
   const errorCallback = (error) => {
     console.error(error);
+    document.getElementById('details').innerHTML = 'Details : ' + error;
   }
   
   navigator.geolocation.getCurrentPosition(succesCallback, errorCallback);
