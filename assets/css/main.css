@@ -128,3 +128,38 @@ html, body {
 .normal {
     background-color: rgb(57, 177, 5);
 }
+
+/* --- RESPONSIVE --- */
+
+@media only screen and (max-height: 1100px) {
+    .top-extern {
+        height: 53%;
+    }
+    .top-middle {
+        height: 99%;
+    }
+}
+@media only screen and (max-height: 967px) {
+    .top-extern {
+        height: 54%;
+    }
+    .top-middle {
+        height: 97.5%;
+    }
+}
+@media only screen and (max-height: 825px) {
+    .top-extern {
+        height: 55%;
+    }
+    .top-middle {
+        height: 97.5%;
+    }
+}
+@media only screen and (max-height: 715px) {
+    .top-extern {
+        height: 56%;
+    }
+    .top-middle {
+        height: 97.5%;
+    }
+}
